@@ -5,34 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wALLetApplication"
         mc:Ignorable="d"
-        Title="wALLet" Height="900" Width="1600">
+        Title="wALLet" 
+        Height="900" Width="1600">
     <Grid>
-        <DockPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="793*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.ColumnSpan="2">
             <!-- Menu bên trái -->
-            <ListBox Width="250" Background="#10B6CC" Foreground="White">
+
+            <ListBox Width="250" Background="#10B6CC" Foreground="White" x:Name="menuList" SelectionChanged="ListBoxItem_Selected">
                 <StackPanel Width="190" Orientation="Horizontal" HorizontalAlignment="Center">
                     <Image Source="/image/app_logo.png" Width="150" Margin="10"/>
                 </StackPanel>
-
-                <ListBoxItem Padding="10 10 0 10" Selected="ListBoxItem_Selected">
+                <ListBoxItem Padding="10 10 0 10" Tag="Home">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Image Source="/image/home_icon.png" Width="20" Height="20"/>
                         <TextBlock Text="Trang chủ" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
                     </StackPanel>
                 </ListBoxItem>
-                <ListBoxItem Padding="10 10 0 10">
+                <ListBoxItem Padding="10 10 0 10" Tag="Query">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Image Source="/image/server_icon.png" Width="20" Height="20"/>
                         <TextBlock Text="Truy vấn" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
                     </StackPanel>
                 </ListBoxItem>
-                <ListBoxItem Padding="10 10 0 10">
+                <ListBoxItem Padding="10 10 0 10" Tag="Analyze">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Image Source="/image/piechart_icon.png" Width="20" Height="20"/>
                         <TextBlock Text="Phân tích" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
                     </StackPanel>
                 </ListBoxItem>
-                <ListBoxItem Padding="10 10 0 10">
+                <ListBoxItem Padding="10 10 0 10" Tag="Profile">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Image Source="/image/user_icon.png" Width="20" Height="20"/>
                         <TextBlock Text="Tôi" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
@@ -47,7 +53,7 @@
 
             <!-- Nội dung chính bên phải -->
             <Grid Background="White">
-                <TextBlock Text="Nội dung chính sẽ hiển thị tại đây." FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <ContentControl x:Name="content"/>
             </Grid>
         </DockPanel>
     </Grid>

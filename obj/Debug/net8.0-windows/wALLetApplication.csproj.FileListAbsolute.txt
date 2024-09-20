@@ -18,3 +18,8 @@ D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\refin
 D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\wALLetApplication.pdb
 D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\wALLetApplication.genruntimeconfig.cache
 D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\ref\wALLetApplication.dll
+D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\Views\Home.g.cs
+D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\Views\Query.g.cs
+D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\Views\Home.baml
+D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\Views\Query.baml
+D:\Dev\C#\ET3260 - Project Test\wALLetApplication\obj\Debug\net8.0-windows\wALLetApplication.sourcelink.json
