@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:wALLetApplication"
         mc:Ignorable="d"
         Title="wALLet" 
-        Height="900" Width="1600">
+        Height="720" Width="1280">
     <Grid>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="793*"/>
             <ColumnDefinition Width="7*"/>
@@ -16,10 +17,8 @@
         <DockPanel Grid.ColumnSpan="2">
             <!-- Menu bên trái -->
 
-            <ListBox Width="250" Background="#10B6CC" Foreground="White" x:Name="menuList" SelectionChanged="ListBoxItem_Selected">
-                <StackPanel Width="190" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Image Source="/image/app_logo.png" Width="150" Margin="10"/>
-                </StackPanel>
+            <ListBox Width="250" Background="#10B6CC" Foreground="White" x:Name="menuList" SelectionChanged="ListBoxItem_Selected" Margin="0 85 0 0">
+                
                 <ListBoxItem Padding="10 10 0 10" Tag="Home">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                         <Image Source="/image/home_icon.png" Width="20" Height="20"/>
@@ -45,16 +44,20 @@
                     </StackPanel>
                 </ListBoxItem>
 
-                <Separator/>
-
-                <TextBlock Text="Bạn" FontWeight="Bold" Foreground="Gray" Margin="10"/>
-
             </ListBox>
 
             <!-- Nội dung chính bên phải -->
-            <Grid Background="White">
+            <Grid Background="White" Margin=" 0 85 0 0 ">
                 <ContentControl x:Name="content"/>
             </Grid>
         </DockPanel>
+        
+        <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Top" >
+            <StackPanel.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+            </StackPanel.Effect>
+            <Image Source="/image/app_logo.png" Width="230" Margin="10"/>
+            <TextBlock Text="Chào mừng trở lại" FontFamily="/font/#Averta Std CY Semibold" FontSize="22" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>

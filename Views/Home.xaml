@@ -5,8 +5,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wALLetApplication"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="White">
     <Grid>
-        <TextBlock Text="Đây là Trang chủ" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Thêm giao dịch" FontFamily="/font/#Averta Std CY Bold" FontSize="22" />
+            <StackPanel Orientation="Horizontal" >
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                    <Image Source="/image/expense01.png" Width="40" Height="40"/>
+                    <TextBlock Text="Khoản chi" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" />
+                </StackPanel>
+                <Separator Width="20" Background="Transparent"/>
+                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                    <Image Source="/image/income01.png" Width="40" Height="40"/>
+                    <TextBlock Text="Khoản thu" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" />
+                </StackPanel>
+                <Separator Width="20" Background="Transparent"/>
+                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                    <Image Source="/image/percentage01.png" Width="40" Height="40"/>
+                    <TextBlock Text="Lãi suất" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" />
+                </StackPanel>
+                <Separator Width="20" Background="Transparent"/>
+                
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                    <Image Source="/image/target01.png" Width="40" Height="40"/>
+                    <TextBlock Text="Khoản vay" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        
     </Grid>
 </UserControl>

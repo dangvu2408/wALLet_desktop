@@ -17,9 +17,13 @@
     <None Remove="font\averta_semibold.otf" />
     <None Remove="font\averta_semibold_italic.otf" />
     <None Remove="image\app_logo.png" />
+    <None Remove="image\expense01.png" />
     <None Remove="image\home_icon.png" />
+    <None Remove="image\income01.png" />
+    <None Remove="image\percentage01.png" />
     <None Remove="image\piechart_icon.png" />
     <None Remove="image\server_icon.png" />
+    <None Remove="image\target01.png" />
     <None Remove="image\user_icon.png" />
   </ItemGroup>
 
@@ -32,9 +36,13 @@
     <Resource Include="font\averta_semibold.otf" />
     <Resource Include="font\averta_semibold_italic.otf" />
     <Resource Include="image\app_logo.png" />
+    <Resource Include="image\expense01.png" />
     <Resource Include="image\home_icon.png" />
+    <Resource Include="image\income01.png" />
+    <Resource Include="image\percentage01.png" />
     <Resource Include="image\piechart_icon.png" />
     <Resource Include="image\server_icon.png" />
+    <Resource Include="image\target01.png" />
     <Resource Include="image\user_icon.png" />
   </ItemGroup>
 
